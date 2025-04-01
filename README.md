@@ -1,6 +1,6 @@
 # [Gaurav Chaurasiya's Portfolio](https://github.com/gauravChaurasiya18/)
 
-![Kappeta Jaya Chandra Reddys's Portfolio-image](src/images/portfolio-logo.png)
+![Gaurav Chaurasiya's Portfolio-image](src/images/portfolio-logo.png)
 
 
 🚀 Welcome to my latest portfolio project! 🚀
