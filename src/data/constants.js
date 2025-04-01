@@ -235,3 +235,5 @@ export const projects = [
   //   webapp: "https://kjcreddy666.github.io/spotify",
   // },
 ];
+
+export const experience = [{}];
