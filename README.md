@@ -1,6 +1,6 @@
 # [Gaurav Chaurasiya's Portfolio](https://github.com/gauravChaurasiya18/)
 
-![Gaurav Chaurasiya's Portfolio-image](src/images/portfolio-logo.png)
+![Gaurav Chaurasiya's Portfolio-image](public/images/portfolio-logo.png)
 
 
 🚀 Welcome to my latest portfolio project! 🚀
