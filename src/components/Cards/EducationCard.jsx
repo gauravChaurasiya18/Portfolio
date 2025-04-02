@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import images from '../../images/CPP-logo.png';
+const images = import.meta.glob('../../images/*', { eager: true });
 
 const Document = styled.img`
   display: none;
@@ -129,7 +130,7 @@ const EducationCard = ({ education }) => {
   return (
     <Card>
       <Top>
-        <Image src={`/images/${education.img}`} />
+        <Image src={images[`../../images/${education.img}`].default} />
         <Body>
           <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>

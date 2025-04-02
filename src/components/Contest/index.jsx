@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { coding } from "../../data/constants";
 import ContestCard from "../Cards/ContestCard";
+const images = import.meta.glob('../../images/*', { eager: true });
+
 
 const Container = styled.div`
   display: flex;
@@ -68,19 +70,19 @@ export const CardContainer = styled.div`
 `;
 
 const Projects = () => (
-    <Container id="projects">
-        <Wrapper>
-            <Title>Coding Profile </Title>
+  <Container id="projects">
+    <Wrapper>
+      <Title>Coding Profile </Title>
 
-            <Description>Here are some of my Coding Profile .</Description>
+      <Description>Here are some of my Coding Profile .</Description>
 
-            <CardContainer>
-                {coding.map((codings) => (
-                    <ContestCard project={codings} />
-                ))}
-            </CardContainer>
-        </Wrapper>
-    </Container>
+      <CardContainer>
+        {coding.map((codings) => (
+          <ContestCard project={codings} />
+        ))}
+      </CardContainer>
+    </Wrapper>
+  </Container>
 );
 
 export default Projects;

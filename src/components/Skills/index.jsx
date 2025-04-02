@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "../../data/constants";
-
-
-
-
-
+// import images from '../../images/'
+const images = import.meta.glob('../../images/*', { eager: true });
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +11,6 @@ const Container = styled.div`
   z-index: 1;
   align-items: center;
 `;
-
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -28,7 +24,6 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
-
 const Title = styled.div`
   font-size: 42px;
   text-align: center;
@@ -40,7 +35,6 @@ const Title = styled.div`
     font-size: 32px;
   }
 `;
-
 export const Description = styled.div`
   font-size: 18px;
   text-align: center;
@@ -50,7 +44,6 @@ export const Description = styled.div`
     font-size: 16px;
   }
 `;
-
 const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
@@ -137,7 +130,7 @@ const Skills = () => (
             <SkillList>
               {item.skills.map((skill) => (
                 <SkillItem>
-                  <SkillImg src={`/images/${skill.image}`} />
+                  <SkillImg src={images[`../../images/${skill.image}`].default} />
                   {skill.name}
                 </SkillItem>
               ))}

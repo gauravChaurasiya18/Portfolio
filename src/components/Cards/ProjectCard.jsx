@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+const images = import.meta.glob('../../images/*', { eager: true });
 
 const Button = styled.button`
   width: 100%;
@@ -112,7 +113,7 @@ const ProjectCards = ({ project }) => {
   };
   return (
     <Card>
-      <Image src={`/images/${project.image}`} />
+      <Image src={images[`../../images/${project.image}`].default} />
       <Tags>
         {project.tags?.map((tag, index) => (
           <Tag key={index}>{tag}</Tag>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+const images = import.meta.glob('../../images/*', { eager: true });
 
 const Button = styled.button`
   width: 100%;
@@ -107,35 +108,35 @@ const Avatar = styled.img`
 `;
 
 const ContestCard = ({ project }) => {
-    const handleButtonClick = () => {
-        window.open(project.github, "_blank");
-    };
-    return (
-        <Card>
-            <Image src={`/images/${project.image}`} />
-            <Tags>
-                {project.tags?.map((tag, index) => (
-                    <Tag key={index}>{tag}</Tag>
-                ))}
-            </Tags>
-            <Details>
-                <Title>{project.title}</Title>
-                <Description>{project.description}</Description>
-            </Details>
-            <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img} />
-                ))}
-            </Members>
-            <Button
-                onClick={(project) => {
-                    handleButtonClick();
-                }}
-            >
-                View Profile
-            </Button>
-        </Card>
-    );
+  const handleButtonClick = () => {
+    window.open(project.github, "_blank");
+  };
+  return (
+    <Card>
+      <Image src={images[`../../images/${project.image}`].default} />
+      <Tags>
+        {project.tags?.map((tag, index) => (
+          <Tag key={index}>{tag}</Tag>
+        ))}
+      </Tags>
+      <Details>
+        <Title>{project.title}</Title>
+        <Description>{project.description}</Description>
+      </Details>
+      <Members>
+        {project.member?.map((member) => (
+          <Avatar src={member.img} />
+        ))}
+      </Members>
+      <Button
+        onClick={(project) => {
+          handleButtonClick();
+        }}
+      >
+        View Profile
+      </Button>
+    </Card>
+  );
 };
 
 export default ContestCard;
