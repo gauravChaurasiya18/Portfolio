@@ -41,7 +41,7 @@ function App() {
         <Navbar />
         <Body>
           <Routes>
-            <Route path="Portfolio/" element={
+            <Route path="/" element={
               <>
                 <Hero />
                 <Contest />

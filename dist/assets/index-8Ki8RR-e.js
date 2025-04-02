@@ -1023,4 +1023,4 @@ margin-top: 20px;
       rgba(0, 70, 209, 0.15) 100%
     );
   width: 100%;
-`;function qS(){return P.jsx(Ng,{theme:Ly,children:P.jsxs(Ay,{children:[P.jsx(Xy,{}),P.jsxs(YS,{children:[P.jsx(jy,{children:P.jsx(nh,{path:"/",element:P.jsxs(P.Fragment,{children:[P.jsx(xv,{}),P.jsx(KS,{}),P.jsx(Tv,{}),P.jsx(vS,{}),P.jsx(tS,{})]})})}),P.jsx(RS,{})]})]})})}const XS=B0.createRoot(document.getElementById("root"));XS.render(P.jsx(ht.StrictMode,{children:P.jsx(qS,{})}));
+`;function qS(){return P.jsx(Ng,{theme:Ly,children:P.jsxs(Ay,{children:[P.jsx(Xy,{}),P.jsxs(YS,{children:[P.jsx(jy,{children:P.jsx(nh,{path:"Portfolio/",element:P.jsxs(P.Fragment,{children:[P.jsx(xv,{}),P.jsx(KS,{}),P.jsx(Tv,{}),P.jsx(vS,{}),P.jsx(tS,{})]})})}),P.jsx(RS,{})]})]})})}const XS=B0.createRoot(document.getElementById("root"));XS.render(P.jsx(ht.StrictMode,{children:P.jsx(qS,{})}));
